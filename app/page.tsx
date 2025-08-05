@@ -54,8 +54,31 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* SEO优化的隐藏内容 */}
+      <div className="sr-only">
+        <h1>GPU Memory Calculator for AI Models - Professional VRAM Requirements Tool</h1>
+        <p>Calculate GPU memory requirements for popular AI models including Qwen, ChatGLM, DeepSeek, Llama, and more. Get accurate VRAM estimates and server recommendations for optimal AI model deployment.</p>
+        <h2>Supported AI Models</h2>
+        <ul>
+          <li>Qwen Series: Qwen-7B, Qwen-14B, Qwen-72B, Qwen2-7B, Qwen2-72B</li>
+          <li>DeepSeek Series: DeepSeek-7B, DeepSeek-67B, DeepSeek-Coder-7B, DeepSeek-Coder-33B</li>
+          <li>ChatGLM Series: ChatGLM3-6B, ChatGLM4-9B</li>
+          <li>Llama Series: Llama2-7B, Llama2-13B, Llama2-70B</li>
+          <li>Baichuan Series: Baichuan2-7B, Baichuan2-13B</li>
+          <li>Yi Series: Yi-6B, Yi-34B</li>
+        </ul>
+        <h2>Key Features</h2>
+        <ul>
+          <li>Accurate GPU memory calculation for AI inference</li>
+          <li>Support for multiple precision formats (FP16, INT8, INT4)</li>
+          <li>KV Cache optimization recommendations</li>
+          <li>Server hardware recommendations</li>
+          <li>Batch processing optimization</li>
+          <li>Multi-language support (Chinese and English)</li>
+        </ul>
+      </div>
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white shadow-sm border-b" role="banner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
@@ -79,7 +102,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" role="main">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Parameter Form */}
           <div className="lg:col-span-2">
@@ -135,7 +158,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t mt-16">
+      <footer className="bg-white border-t mt-16" role="contentinfo">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-500 text-sm">
             <p>{t('footerCopyright')}</p>

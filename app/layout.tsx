@@ -2,12 +2,87 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { I18nProvider } from './i18n/context'
+import StructuredData from './components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Multimodel GPU Memory Calculator | 多模型GPU显存计算器',
-  description: 'Multimodel GPU memory requirement calculation & server recommendation tool | 多模型GPU显存需求计算与服务器推荐工具',
+  title: {
+    default: 'GPU Memory Calculator - AI Model VRAM Requirements | 多模型GPU显存计算器',
+    template: '%s | GPU Memory Calculator'
+  },
+  description: 'Professional GPU memory calculator for AI models. Calculate VRAM requirements for LLM, multimodal, and TTS models. Get server recommendations for optimal AI deployment. | 专业的AI模型GPU显存计算器，支持大语言模型、多模态模型显存需求计算与服务器推荐。',
+  keywords: [
+    'GPU memory calculator',
+    'VRAM calculator', 
+    'AI model memory',
+    'LLM memory requirements',
+    'GPU显存计算器',
+    'AI模型显存',
+    '大语言模型显存',
+    'Qwen',
+    'ChatGLM',
+    'DeepSeek',
+    'Llama',
+    'GPU server recommendation',
+    'AI inference',
+    'machine learning',
+    'deep learning'
+  ],
+  authors: [{ name: 'GPU Memory Calculator Team' }],
+  creator: 'GPU Memory Calculator',
+  publisher: 'GPU Memory Calculator',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://llmgpucalculator.info'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'zh-CN': '/zh',
+      'en-US': '/en',
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    url: 'https://llmgpucalculator.info',
+    title: 'GPU Memory Calculator - AI Model VRAM Requirements',
+    description: 'Professional GPU memory calculator for AI models. Calculate VRAM requirements for LLM, multimodal, and TTS models.',
+    siteName: 'GPU Memory Calculator',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'GPU Memory Calculator - AI Model VRAM Requirements',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GPU Memory Calculator - AI Model VRAM Requirements',
+    description: 'Professional GPU memory calculator for AI models. Calculate VRAM requirements for LLM, multimodal, and TTS models.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+    yandex: 'your-yandex-verification-code',
+    yahoo: 'your-yahoo-verification-code',
+  },
 }
 
 export default function RootLayout({
@@ -17,6 +92,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh">
+      <head>
+        <StructuredData />
+      </head>
       <body className={inter.className}>
         <I18nProvider>
           {children}

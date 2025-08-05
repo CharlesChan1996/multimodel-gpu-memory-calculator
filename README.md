@@ -4,7 +4,7 @@
 
 一个专业的AI推理场景显存需求计算与服务器推荐工具，帮助开发者和企业准确评估AI项目的硬件需求。
 
-🌐 **在线体验**: [https://multimodel-gpu-memory-calculator.vercel.app](https://multimodel-gpu-memory-calculator.vercel.app)
+🌐 **在线体验**: [https://llmgpucalculator.info](https://llmgpucalculator.info)
 
 ## 🌟 项目亮点
 
