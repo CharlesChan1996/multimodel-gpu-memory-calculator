@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { I18nProvider } from './i18n/context'
 import StructuredData from './components/StructuredData'
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -88,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body className={inter.className}>
+        <GoogleAnalytics />
         <StructuredData />
         <I18nProvider>
           {children}

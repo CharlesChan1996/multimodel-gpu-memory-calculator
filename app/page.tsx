@@ -7,6 +7,7 @@ import ParameterForm from './components/ParameterForm';
 import ResultDisplay from './components/ResultDisplay';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import { useI18n } from './i18n/context';
+import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 import { Calculator, Cpu } from 'lucide-react';
 
 const defaultParams: ScenarioParams = {
@@ -42,6 +43,7 @@ const defaultParams: ScenarioParams = {
 
 export default function Home() {
   const { t } = useI18n();
+  const { trackCalculation } = useGoogleAnalytics();
   const [params, setParams] = useState<ScenarioParams>(defaultParams);
   const [showResults, setShowResults] = useState(false);
 
@@ -50,6 +52,11 @@ export default function Home() {
 
   const handleCalculate = () => {
     setShowResults(true);
+    // 跟踪计算事件
+    const mainModel = params.models[0];
+    if (mainModel) {
+      trackCalculation(mainModel.name, calculation.totalMemory);
+    }
   };
 
   return (
