@@ -15,7 +15,7 @@ git add .
 git commit -m "feat: 多模型GPU显存计算器 - 支持多模型配置和中国主流模型"
 
 # 添加远程仓库（替换为你的GitHub仓库地址）
-git remote add origin https://github.com/your-username/multimodel-gpu-memory-calculator.git
+git remote add origin https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator.git
 
 # 推送到GitHub
 git branch -M main
@@ -33,7 +33,7 @@ git push -u origin main
 
 #### 方法B: 一键部署
 点击下方按钮：
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/multimodel-gpu-memory-calculator)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator)
 
 #### 方法C: 使用Vercel CLI
 ```bash
@@ -52,7 +52,7 @@ vercel --prod
 ### 本地开发
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/multimodel-gpu-memory-calculator.git
+git clone https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator.git
 cd multimodel-gpu-memory-calculator
 
 # 安装依赖
@@ -84,12 +84,22 @@ npm start
 
 ## 🌐 域名配置
 
-部署完成后，Vercel会自动分配一个域名，格式如：
-- `https://multimodel-gpu-memory-calculator.vercel.app`
-- `https://multimodel-gpu-memory-calculator-git-main-username.vercel.app`
+部署完成后，你可以通过以下地址访问：
+- **正式域名**: `https://llmgpucalculator.info`
+- **Vercel域名**: `https://multimodel-gpu-memory-calculator.vercel.app`
+- **Git分支域名**: `https://multimodel-gpu-memory-calculator-git-main-charleschan1996.vercel.app`
 
-如需自定义域名：
-1. 在Vercel项目设置中添加域名
+### 自定义域名配置 (已完成)
+
+本项目已配置自定义域名 `llmgpucalculator.info`：
+
+1. ✅ **域名添加**: 已在Vercel项目设置中添加域名
+2. ✅ **DNS配置**: 已配置DNS记录指向Vercel
+3. ✅ **SSL证书**: 已自动配置HTTPS证书
+4. ✅ **域名验证**: 域名已验证并正常工作
+
+如需配置其他自定义域名：
+1. 在Vercel项目设置中添加新域名
 2. 配置DNS记录指向Vercel
 3. 等待SSL证书自动配置
 

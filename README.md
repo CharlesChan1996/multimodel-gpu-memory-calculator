@@ -1,6 +1,6 @@
 # 多模型GPU显存计算器 | Multimodel GPU Memory Calculator
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/multimodel-gpu-memory-calculator)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator)
 
 一个专业的AI推理场景显存需求计算与服务器推荐工具，帮助开发者和企业准确评估AI项目的硬件需求。
 
@@ -144,7 +144,7 @@ npm start
 ### 方法一：一键部署
 点击下方按钮一键部署到Vercel：
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/multimodel-gpu-memory-calculator)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator)
 
 ### 方法二：手动部署
 1. Fork本项目到你的GitHub账户
@@ -171,7 +171,7 @@ vercel --prod
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/multimodel-gpu-memory-calculator.git
+git clone https://github.com/CharlesChan1996/multimodel-gpu-memory-calculator.git
 cd multimodel-gpu-memory-calculator
 
 # 安装依赖
