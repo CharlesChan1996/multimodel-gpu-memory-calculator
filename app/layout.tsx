@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: 'Professional GPU memory calculator for AI models. Calculate VRAM requirements for LLM, multimodal, and TTS models. Get server recommendations for optimal AI deployment. | 专业的AI模型GPU显存计算器，支持大语言模型、多模态模型显存需求计算与服务器推荐。',
   keywords: [
     'GPU memory calculator',
-    'VRAM calculator', 
+    'VRAM calculator',
     'AI model memory',
     'LLM memory requirements',
     'GPU显存计算器',
@@ -78,11 +78,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
-  },
 }
 
 export default function RootLayout({
@@ -92,10 +87,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh">
-      <head>
-        <StructuredData />
-      </head>
       <body className={inter.className}>
+        <StructuredData />
         <I18nProvider>
           {children}
         </I18nProvider>
