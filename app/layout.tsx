@@ -42,13 +42,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
+      'en-US': '/',
       'zh-CN': '/zh',
-      'en-US': '/en',
     },
   },
   openGraph: {
     type: 'website',
-    locale: 'zh_CN',
+    locale: 'en_US',
     url: 'https://llmgpucalculator.info',
     title: 'GPU Memory Calculator - AI Model VRAM Requirements',
     description: 'Professional GPU memory calculator for AI models. Calculate VRAM requirements for LLM, multimodal, and TTS models.',
@@ -87,7 +87,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh">
+    <html lang="en">
       <body className={inter.className}>
         <GoogleAnalytics />
         <StructuredData />

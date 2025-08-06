@@ -22,7 +22,7 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
     categories: ['utilities', 'productivity', 'developer'],
-    lang: 'zh-CN',
+    lang: 'en-US',
     orientation: 'portrait-primary',
     scope: '/',
   }
